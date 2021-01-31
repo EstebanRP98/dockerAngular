@@ -1,0 +1,17 @@
+<div style="text-align: center">
+    <button class="btn1" (click)=irAgregar() >
+        Agregar
+    </button>
+</div>   
+
+<div>
+<div id="lista1" *ngFor="let pelicula of peliculas">
+    <ul>
+        <li> 
+           <a>{{pelicula.nombre}}: {{pelicula.descripcion}}</a> 
+        </li>
+    </ul>
+</div>
+</div>
+
+<router-outlet></router-outlet>

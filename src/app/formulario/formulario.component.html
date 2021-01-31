@@ -1,0 +1,9 @@
+<div>
+    <form   #f="ngForm" (ngSubmit)="f.form.valid && onGuardarPelicula()">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" [(ngModel)]="nombreInput" required>
+        <label>Descripcion:</label>
+        <input type="text" name="descripcion" [(ngModel)]="descripcion" required><br>
+        <button type="submit">Agregar</button>
+    </form>
+</div>
